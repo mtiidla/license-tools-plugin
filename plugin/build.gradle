@@ -38,7 +38,7 @@ dependencies {
     compile gradleApi()
     compile localGroovy()
 
-    compile 'com.android.tools.build:gradle:2.3.1'
+    //adding gradle plugin here messes with the entire build, it takes presence over "buildscript -> classpath -> gradle plugin" as far as I see. And it was only needed for @NonNullByDefault Annotation?
     compile 'org.yaml:snakeyaml:1.17'
     compile 'org.apache.commons:commons-lang3:3.4'
     testCompile 'junit:junit:4.12'
